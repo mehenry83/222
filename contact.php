@@ -8,6 +8,6 @@
 @see
 */
 
-echo "This work 1";
+echo "Thwork 1";
 
 
