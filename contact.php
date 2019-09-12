@@ -18,7 +18,7 @@
     @author     Mary Henry
     @version    9.5.2019
     @link       https://cislinux.hfcc.edu/~mehenry/contact.php
-    @see
+    @grade      10 / 10
      */
 
     echo "<h1>Mary H</h1>";
@@ -29,7 +29,7 @@
 
     define ('SLACK', 'Mary Henry');
 
-    echo "<p>My slack username = " . SLACK;
+    echo "<p>My slack username = " . SLACK . '</p>';
 
 
 
