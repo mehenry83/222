@@ -18,18 +18,18 @@
     @author     Mary Henry
     @version    9.5.2019
     @link       https://cislinux.hfcc.edu/~mehenry/contact.php
-    @grade      10 / 10
+    @see
      */
 
     echo "<h1>Mary H</h1>";
 
-    $email = "maryisnotgrumpy@gmail.com";
+    $email = "maryisnotrumpy@gmail.com";
 
     echo "<p>My e-mail = $email</p>";
 
     define ('SLACK', 'Mary Henry');
 
-    echo "<p>My slack username = " . SLACK . '</p>';
+    echo "<p>My slack userne = " . SLACK;
 
 
 
