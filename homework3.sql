@@ -8,7 +8,7 @@ create table if not exists mehenry.h3_teams
 	date_deleted datetime null
 );
 
-create table if not exists hw3_members
+create table if not exists mehenry.hw3_members
 (
     member_id    bigint auto_increment
         primary key,
