@@ -1,15 +1,15 @@
 <!DOCTYPE html>
     <?php
     /**
-     * store.php
+     * index.php
      *
      *
      *
-     * @category   store.php
+     * @category   index.php
      * @package    project 1
      * @author     Mary Henry
      * @version    2019.9.24
-     * @link       https://cislinux.hfcc.edu/~mehenry/p1/store.php
+     * @link       https://cislinux.hfcc.edu/~mehenry/CIS222/p1
      */
     ?>
 
@@ -28,7 +28,7 @@
      ?>
 
 	<main>
-        <div style="text-align: center;"><img src="images/cup.jpg">
+        <div style="text-align: center;"><img src="images/cup.jpg" alt="flower teacup">
             <h2>With a love of all things tiny and gardening I decided what better to do than incorporate those things into tiny treasures to share.</h2></div>
 	</main>
 
