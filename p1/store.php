@@ -24,27 +24,11 @@
 
 <main role="main">
     <?php include_once "connect.php";
-    $result = $db->("SELECT `item_id`, `item_name`, `item_price`FROM product_records");
-    $result->excute($db);
     ?>
-    <?php foreach($result->fetch(PDO::FETCH_ASSOC) as $row) : ?>
-        <tr>
-            <td><?php echo $row['item_id']; ?></td>
-            <td><?php echo $row['item_name']; ?></td>
-            <td><?php echo $row['item_price']; ?></td>
-        </tr>
-    <?php endforeach;?>
-    </table>
-
-
-
-
-
-
 </main>
 
     <?php
     include 'footer.php';
-    ?>
+    echo "mary";
 </body>
 </html>
