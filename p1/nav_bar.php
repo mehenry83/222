@@ -13,20 +13,20 @@
 
 
 
-/**<ul class="nav">
-      <li><a href="?page=&action=index">Home</a></li>
-      <li><a href="?page=&action=aboutus">About</a></li>
-      <li><a href="?page=&action=store">Current Items</a></li>
-      <li><a href="?page=contactus&action=contactus">Contact Us</a></li>
-    </ul>
- */
+echo '<ul class="nav">
+      <li><a href="?page=index">Home</a></li>
+      <li><a href="?page=aboutus">About</a></li>
+      <li><a href="?page=store">Current Items</a></li>
+      <li><a href="?page=contactus">Contact Us</a></li>
+    </ul>';
 
-echo
+
+/**e
 '<ul class="nav">
           <li><a href="index.php">Home</a></li>
           <li><a href="aboutus.php">About</a></li>
           <li><a href="store.php">Current Items</a></li>
           <li><a href="contactus.php">Contact Us</a></li>
         </ul>';
-
+*/
 ?>

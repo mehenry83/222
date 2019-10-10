@@ -13,28 +13,19 @@
      */
 
 
-    /**
-     * non-working index.
-     *
-     * if (!isset($_GET['page'])) {
-        require('index.php');
-    } else if ($_GET['page'] == 'aboutus') {
-        if (!isset($_GET['action'])) {
-            require('aboutus.php');
-        } else if ($_GET['action'] == 'store') {
-            require('store.php');
-        } else if ($_GET['action'] == 'contactus') {
-            require('contactus.php');
-        } else {
-            require('index.php');
+
+   if (isset($_GET['page'])) {
+       if ($_GET['page'] == 'aboutus') {
+        require 'aboutus.php'; exit();
         }
-    } else {
-        require('index_.php');
+        elseif  ($_GET['page'] == 'store') {
+            require 'store.php'; exit();
+        }
+       elseif  ($_GET['page'] == 'contactus') {
+           require 'contactus.php'; exit();
+       }
     }
-     */
-
-
-    ?>
+   ?>
 
 
 
