@@ -14,8 +14,7 @@
     ?>
     <?php
         include 'head.php';
-        ?>
-
+?>
 
 <body>
 	 <?php

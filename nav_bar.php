@@ -14,9 +14,9 @@
 echo
 '<ul class="nav">
           <li><a href="index.php">Home</a></li>
-          <li><a href="aboutus.php">About</a></li>
-          <li><a href="store.php">Current Items</a></li>
-          <li><a href="contactus.php">Contact Us</a></li>
+          <li><a href="?pageid=aboutus.php">About</a></li>
+          <li><a href="?pageid=store.php">Current Items</a></li>
+          <li><a href="?pageid=contactus.php">Contact Us</a></li>
         </ul>';
-
+echo 'check';
 ?>

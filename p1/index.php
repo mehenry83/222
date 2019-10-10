@@ -11,7 +11,32 @@
      * @version    2019.9.24
      * @link       https://cislinux.hfcc.edu/~mehenry/CIS222/p1
      */
+
+
+    /**
+     * non-working index.
+     *
+     * if (!isset($_GET['page'])) {
+        require('index.php');
+    } else if ($_GET['page'] == 'aboutus') {
+        if (!isset($_GET['action'])) {
+            require('aboutus.php');
+        } else if ($_GET['action'] == 'store') {
+            require('store.php');
+        } else if ($_GET['action'] == 'contactus') {
+            require('contactus.php');
+        } else {
+            require('index.php');
+        }
+    } else {
+        require('index_.php');
+    }
+     */
+
+
     ?>
+
+
 
     <?php
         include 'head.php';
@@ -22,6 +47,7 @@
 	 <?php
 	 include 'header.php';
 	 ?>
+
 
      <?php
      include 'nav_bar.php';
@@ -36,5 +62,6 @@
 	<?php
 	include 'footer.php';
 	?>
-</body>
-</html>
+</<body>
+</<html>
+

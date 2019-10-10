@@ -5,7 +5,7 @@
       <paths name="cislinux.hfcc.edu">
         <serverdata>
           <mappings>
-            <mapping deploy="CIS222/p1" local="$PROJECT_DIR$" web="http://cislinux.hfcc.edu/~mehenry/CIS222/p1" />
+            <mapping deploy="/CIS222/" local="$PROJECT_DIR$" web="/CIS222/" />
           </mappings>
         </serverdata>
       </paths>

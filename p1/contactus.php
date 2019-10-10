@@ -11,6 +11,7 @@
  * @link       https://cislinux.hfcc.edu/~mehenry/p1/contactus.php
  */
 
+
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +45,7 @@
 
       $dbh = new PDO("mysql:host=$host;dbname=$db",$user,$pass);
 
-      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
+      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $sql = "INSERT INTO contact (name, email, notes)
       VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["notes"]."')";
       if ($dbh->query($sql)) {

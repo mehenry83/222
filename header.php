@@ -12,5 +12,6 @@
  * @link       https://cislinux.hfcc.edu/~mehenry/project1
  */
 echo '
-<header id="header"><h1>MarthaMyrtle</h1></header>'
+<header id="header"><h1>MarthaMyrtle</h1></header>';
+
 ?>

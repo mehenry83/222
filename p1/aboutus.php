@@ -13,6 +13,8 @@
      * @version    2019.9.24
      * @link       https://cislinux.hfcc.edu/~mehenry/p1/aboutus.php
      */
+
+        $id='aboutus';
         include 'head.php';
         include 'header.php';
         include 'nav_bar.php';
