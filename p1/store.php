@@ -14,20 +14,9 @@
 
 
 ?>
-<html>
-    <?php
-    include 'head.php';
-    ?>
 
 
-
-<body>
-    <?php
-    include 'header.php';
-    include 'nav_bar.php';
-    ?>
-
-<main role="main">
+<main>
     <?php
 echo "<table style='border: solid 1px black; color: darkseagreen;align: center;'>";
 echo "<tr><th>Id</th><th>Product Name</th><th>Product Despcription</th></tr>";
@@ -77,8 +66,3 @@ echo "</table>";
 ?>
 </main>
 
-    <?php
-    include 'footer.php';
-    ?>
-</body>
-</html>

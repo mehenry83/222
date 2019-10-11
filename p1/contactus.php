@@ -11,29 +11,16 @@
  * @link       https://cislinux.hfcc.edu/~mehenry/p1/contactus.php
  */
 
-
 ?>
 
-<!DOCTYPE html>
-<html>
-    <?php
-        include 'head.php';
 
-
-        ?>
-
-<body>
-	<?php
-	    include 'header.php';
-	    include 'nav_bar.php';
-	    ?>
- 
 
 
 	<main>
         <div class="container">
   <div style="text-align:center">
     <h2>Contact Us</h2>
+
       <?php
 
 
@@ -92,8 +79,3 @@
 </div>
     </main>
 
-    <?php
-        include 'footer.php';
-    ?>
-</body>
-</html>

@@ -19,14 +19,3 @@ echo '<ul class="nav">
       <li><a href="?page=store">Current Items</a></li>
       <li><a href="?page=contactus">Contact Us</a></li>
     </ul>';
-
-
-/**e
-'<ul class="nav">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="aboutus.php">About</a></li>
-          <li><a href="store.php">Current Items</a></li>
-          <li><a href="contactus.php">Contact Us</a></li>
-        </ul>';
-*/
-?>

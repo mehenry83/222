@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<!DOCTYPE>
+<html lang="en">
     <?php
     /**
      * index.php
@@ -13,46 +15,39 @@
      */
 
 
-
-   if (isset($_GET['page'])) {
-       if ($_GET['page'] == 'aboutus') {
-        require 'aboutus.php'; exit();
-        }
-        elseif  ($_GET['page'] == 'store') {
-            require 'store.php'; exit();
-        }
-       elseif  ($_GET['page'] == 'contactus') {
-           require 'contactus.php'; exit();
-       }
-    }
-   ?>
-
-
-
-    <?php
-        include 'head.php';
+    include 'head.php';
         ?>
 
-
-<body>
-	 <?php
+    <?php
 	 include 'header.php';
 	 ?>
 
+    <body>
 
      <?php
      include 'nav_bar.php';
      ?>
+     <main>
 
-	<main>
-        <div style="text-align: center; color: darkseagreen;"><img src="images/cup.jpg" alt="flower teacup">
-            <h2>With a love of all things tiny and gardening I decided what better to do than incorporate those things into tiny treasures to share.</h2></div>
-	</main>
+    <?php
 
-
-	<?php
-	include 'footer.php';
-	?>
-</<body>
-</<html>
-
+   if (isset($_GET['page'])) {
+       if ($_GET['page'] == 'aboutus') {
+        require 'aboutus.php';
+        }
+        elseif  ($_GET['page'] == 'store') {
+            require 'store.php';
+        }
+       elseif  ($_GET['page'] == 'contactus') {
+           require 'contactus.php';
+       }
+       else require 'home.php';
+    }
+    else require 'home.php';
+   ?>
+     </main>
+    </body>
+    <?php
+    require 'footer.php';
+    ?>
+</html>
