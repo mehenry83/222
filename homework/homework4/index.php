@@ -16,6 +16,7 @@ $sql = "SHOW TABLES";
 $statement = $dbConn->prepare($sql);
 $statement->execute();
 $tables = $statement->fetchAll(PDO::FETCH_NUM);
+
 foreach($tables as $table)
     echo $table[0], '<br>';
 
