@@ -1,50 +1,60 @@
 
-<?php
-$servername = "localhost";
-$db="mehenry";
-$username = "mehenry";
-$password = "samsvyzt";
-$charset='utf8mb4';
-
-try {
-    $dbn = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
-    $dbn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
-}
+<div class="container">
+  <div style="text-align:center">
+    <h2>Add an Animal</h2>
+      <?php
+      $servername = "localhost";
+      $db="mehenry";
+      $username = "mehenry";
+      $password = "samsvyzt";
+      $charset='utf8mb4';
 
 
-catch(PDOException $e)
-{
-    echo "Connection failed: " . $e->getMessage();
-}
-?>
+      if(isset($_POST["submit"]))
 
 
+      try {
+      $dbConn = new PDO("mysql:servername=$servername;dbname=$db",$username,$password);
+      $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
+      $sql = "INSERT INTO midterm_animals (type, breed, animal_name)
+      VALUES ('".$_POST["type"]."','".$_POST["breed"]."','".$_POST["animal_name"]."')";
+      if ($dbConn->query($sql)) {
+      echo "<script type= 'text/javascript'>alert('Thank You for adding your animal');</script>";
+      }
+      else{
+      echo "<script type= 'text/javascript'>alert('Oops.');</script>";
+      }
 
-    <!doctype html>
-
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-
-        <title>Index</title>
-        <meta name="description" content="The HTML5 Herald">
-        <meta name="author" content="SitePoint">
-
-        <link rel="stylesheet" href="">
-
-    </head>
-    <header>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="insert.php">Insert</a></li>
-            <li><a href="add.php">Add</a></li>
-            <li><a href="delete.php">Delete</a></li>
-        </ul>';
-    </header>
+      $dbConn = null;
+      }
+      catch(PDOException $e)
+      {
+      echo $e->getMessage();
+      }
 
 
-    <body>
-    </body>
-    </html>
-<?php
+      ?>
+
+    <p>Add an animal</p>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="add.php" method="POST">
+        <label for="type">Type</label>
+        <input type="text" id="type" name="type" placeholder="Your name.." value="type">
+        <label for="breed">breed</label>
+        <input type="text" id="breed" name="breed" placeholder="breed" value="breed">
+        <label for="animal_name">animal name</label>
+        <input type="text" id="animal_name" name="animal_name" placeholder="name.." value="animal_name">
+        <input type="submit" name='submit' value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+    <a href="index.php">Back.</a>
+    </main>
+</body>
+</html>
