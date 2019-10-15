@@ -1,6 +1,19 @@
 
 <?php
 
+/**
+ *
+ *
+ * Midterm
+ *
+ * @category   midterm
+ * @package    Midterm
+ * @author     Mary Henry
+ * @version    2019.09.05
+ * @link       https://cislinux.hfcc.edu/~mehenry/CIS222/midterm
+
+ */
+
 $servername = "localhost";
 $db="mehenry";
 $username = "mehenry";
