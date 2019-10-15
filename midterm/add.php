@@ -3,19 +3,12 @@
   <div style="text-align:center">
     <h2>Add an Animal</h2>
       <?php
-      $servername = "localhost";
-      $db="mehenry";
-      $username = "mehenry";
-      $password = "samsvyzt";
-      $charset='utf8mb4';
-
 
       if(isset($_POST["submit"]))
 
 
       try {
-      $dbConn = new PDO("mysql:servername=$servername;dbname=$db",$username,$password);
-      $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      include_once "connect.php";
       $sql = "INSERT INTO midterm_animals (type, breed, animal_name)
       VALUES ('".$_POST["type"]."','".$_POST["breed"]."','".$_POST["animal_name"]."')";
       if ($dbConn->query($sql)) {
