@@ -9,7 +9,7 @@
  * @category   midterm
  * @package    Midterm
  * @author     Mary Henry
- * @version    2019.09.05
+ * @version    2019.10.13
  * @link       https://cislinux.hfcc.edu/~mehenry/CIS222/midterm
 
  */
@@ -50,7 +50,7 @@ $result = $dbConn->query("SELECT * FROM midterm_animals ORDER BY id DESC");
         echo "<td>".$row['type']."</td>";
         echo "<td>".$row['breed']."</td>";
         echo "<td>".$row['animal_name']."</td>";
-        echo "<td><a href=\"edit.php?id=$row[id]\">Edit</a> | <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+        echo "<td><a href=\"edit.php?id=$row[id]\">Edit</a> | <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Have you adopted this animal??')\">Delete</a></td>";
     }
     ?>
 </table>
