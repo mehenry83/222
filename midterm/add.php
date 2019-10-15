@@ -15,7 +15,7 @@
 
       try {
       $dbConn = new PDO("mysql:servername=$servername;dbname=$db",$username,$password);
-      $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
+      $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $sql = "INSERT INTO midterm_animals (type, breed, animal_name)
       VALUES ('".$_POST["type"]."','".$_POST["breed"]."','".$_POST["animal_name"]."')";
       if ($dbConn->query($sql)) {
