@@ -1,3 +1,5 @@
+-- Grade: 10 / 10
+
 create table if not exists mehenry.h3_teams
 (
 	team_id bigint auto_increment
