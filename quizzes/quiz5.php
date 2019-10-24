@@ -53,4 +53,4 @@ $myTransaction = new Order();
 // B. (2pt) Explain how someone would update and use an object like this.
 // Can you use it in your project?
 You could use it to update prices and taxes and streamline your forms. I could use it in my project if I could properly
-execute my code with out errors.
+execute my code with out errors. Which is hard.
