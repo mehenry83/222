@@ -11,6 +11,15 @@ class MyFileObject {
     }
 }
 
+
+/**
+
+$filename = file_get_contents("MyFileObject.php"  );
+file_put_contents("MyFileOject.php" , $filename);
+
+
+
+
 $host = '127.0.0.1';
 $db  = 'mehenry';
 $user = 'mehenry';
@@ -29,6 +38,9 @@ try {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 
+*/
 
 
 
+
+?>
