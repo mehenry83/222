@@ -45,6 +45,9 @@ $mlk->set_filename("Martin Luther King Jr");
 
 echo "<br>".$mlk->get_filename();
 echo "<br>".$jfk->get_filename();
+?>
+    </body>
+</html>
 
 
 
