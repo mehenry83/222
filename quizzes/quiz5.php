@@ -8,7 +8,7 @@
 * @package     Quiz 5
 * @author      Mary Henry <maryisnotgrumpy@gmail.com>
 * @version     2019.10.03
-* @grade
+* @grade        12 /10
 */
 
 // 1. (4pts) Define a simple class called Order.
