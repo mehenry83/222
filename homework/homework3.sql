@@ -27,9 +27,9 @@ VALUES (1, 'blues', now(), now(),NULL)
 SELECT team_id FROM h3_teams
 where team_id=1
 
-UPDATE h3_teams
+UPDATE h3_teams:
 SET date_created=now()
-WHERE date_created=now()
+WHERE date_created=now();;
 
 DELETE FROM h3_teams WHERE team_id=2
 
