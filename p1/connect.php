@@ -1,22 +1,15 @@
 <?php
-
-class MyFileObject {
-    var $filename;
-    function set_filename($new_filename) {
-        $this->filename = $new_filename;
-    }
-
-    function get_filename() {
-        return $this->filename;
-    }
-}
-
-
-
 /**
-
-$filename = file_get_contents("MyFileObject.php"  );
-file_put_contents("MyFileOject.php" , $filename);
+ * connect.php
+ *
+ *
+ *
+ * @category   connect.php
+ * @package    project 1
+ * @author     Mary Henry
+ * @version    2019.9.24
+ * @link       https://cislinux.hfcc.edu/~mehenry/p1/connect.php
+ */
 
 
 
@@ -38,9 +31,6 @@ try {
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
-
-*/
-
 
 
 

@@ -32,7 +32,7 @@
 
         echo "Fbi files on: " . $fbi->get_content() . "<br>Department Requested:". $fbi->get_client() . "<br>Clearance:".$fbi->get_clearance();
         echo '<br><br>';
-        echo "Cia files on:"  . $cia->get_content()."<br>Department Requested:". $cia->get_client() . "<br>Clearance:".$cia->get_clearance();
+        echo "Cia files on:"  . $cia->get_content(). "<br>Department Requested:". $cia->get_client() . "<br>Clearance:".$cia->get_clearance();
 
  ?>
 <?php include "MyFileObject.php";
@@ -45,5 +45,10 @@ $mlk->set_filename("Martin Luther King Jr");
 
 echo "<br>".$mlk->get_filename();
 echo "<br>".$jfk->get_filename();
+?>
+    </body>
+</html>
+
+
 
 
