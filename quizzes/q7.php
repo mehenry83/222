@@ -7,10 +7,10 @@
 * @package     Quiz 7
 * @author      Mary Henry <mehenry83@hawkmail.hfcc.edu>
 * @version     2019.11.07
-* @grade
+* @grade        10 / 10
 */
 
-// 1. (7pts) Write the PHP needed below to send an email.
+// 1. (7/7pts) Write the PHP needed below to send an email.
 //          The subject should read "Test Email"
 //          The body should use the variable $content
 //          The email should be sent to crbanks1@hfcc.edu\
@@ -29,13 +29,13 @@ mail($to, $subject, $message, $headers);
 
 
 
-// 2. (1pts) When uploading a file via an HTML form into PHP,
+// 2. (1/1pts) When uploading a file via an HTML form into PHP,
 // what global array are the files temporarily stored in?
 $_FILES
 
 
 
-// 3. (2pt) Use the PHP header functionality to send the user to the following url
+// 3. (2/2pt) Use the PHP header functionality to send the user to the following url
 //              https://facebook.com
 
 header('Location: https://facebook.com');
