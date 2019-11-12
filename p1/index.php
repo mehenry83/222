@@ -12,6 +12,7 @@
      * @author     Mary Henry
      * @version    2019.9.24
      * @link       https://cislinux.hfcc.edu/~mehenry/CIS222/p1
+     * @grade       160 / 150
      */
 
 
