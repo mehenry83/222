@@ -1,7 +1,4 @@
-
-<!DOCTYPE>
-<html lang="en">
-    <?php
+<?php
     /**
      * index.php
      *
@@ -32,6 +29,7 @@
 
     <?php
 
+
    if (isset($_GET['page'])) {
        if ($_GET['page'] == 'aboutus') {
         require 'aboutus.php';
@@ -41,6 +39,12 @@
         }
        elseif  ($_GET['page'] == 'contactus') {
            require 'contactus.php';
+       }
+     elseif  ($_GET['page'] == 'login') {
+           require 'login.php';
+       }
+     elseif  ($_GET['page'] == 'product-detail') {
+           require 'product-detail.php';
        }
        else require 'home.php';
     }
